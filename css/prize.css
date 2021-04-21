@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+
+
+section.prizes{
+    background-color: black;
+   
+}
+.prize{
+    color: white;
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 2.2rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 4rem;
+}
+
+.loots{
+    margin: 0;
+  padding: 0;
+  background:black;
+  color: black;
+  font-family: 'Fira Sans';
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+
+div.pp{
+    display: flex;
+}
+.prize.container.first{
+    display:flex;
+    flex-direction:column;
+}
+.prize.container.second{
+    display:flex;
+    flex-direction:row;
+}
+
+.prize.container.third{
+    display:flex;
+    flex-direction:column;
+}
+
+div.loot.first {
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+div.loot.second{
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+div.loot.third {
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    border-radius: 20px;
+    margin-left: 3rem;
+    margin-top: 12rem;
+}
+
+div.loot.fourth {
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    border-radius: 20px;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
+
+div.loot.fifth {
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    border-radius: 20px;
+    margin-left: 3rem;
+    
+}
+
+div.loot.sixth {
+    
+    background-color: white;
+    width: 20rem;
+    height:23rem;
+    border-radius: 20px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px){
+    .prize.container.first{
+        display:flex;
+        flex-direction:column;
+        margin-top: 2rem;
+       
+    }
+
+    .prize.container.second{
+        display:flex;
+        flex-direction:column;
+        margin-top: -5%;
+    }
+
+    .prize.container.third{
+        display:flex;
+        flex-direction:column;
+        margin-top: -5%;
+    }
+
+    div.pp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        margin: 10px auto 5% auto;
+    }
+
+    div.loot.first {
+
+        position: relative;
+        margin: -5% auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+        margin-top: 0rem;
+        
+     
+       
+    }
+
+    div.loot.second{
+        position: relative;
+        margin: 30px auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+       
+
+    }
+
+    div.loot.third {
+        position: relative;
+        margin: 10px auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+    }
+
+    div.loot.fourth {
+        position: relative;
+        margin: 20px auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+    }
+
+    div.loot.fifth {
+        position: relative;
+        margin: 10px auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+    }
+
+    div.loot.sixth {
+        position: relative;
+        margin: 20px auto 10px auto;
+        background-color: white;
+        width: 20rem;
+        height:23rem;
+        border-radius: 20px;
+    }
+}

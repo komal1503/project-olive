@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,body{
+  overflow-x: hidden;
+
+}
+
+/* NAVBAR */
+nav{ 
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+  background: #000000;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-icon {
+  position: absolute;
+  margin-top: 10px;
+  left: 2%;
+  color: #ff5864;
+}
+
+.checkbtn {
+  color: white;
+}
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s linear;
+}
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
+/*Title */
+body {
+  
+}
+.comp1{
+  background-color: black;
+  padding: 3%;
+}
+.home-left {
+  width: 1000px;
+  margin-left: 4vw;
+}
+
+.name-1 {
+  text-transform: uppercase;
+  padding-left: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 180px;
+  line-height: 211px;
+  color: #ffffff;
+  animation: moveInTop 2s;
+}
+
+.name-2 {
+  font-family: NEON LED Light;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 230px;
+  letter-spacing: 0em;
+  color: #ff5a20;
+  animation: moveInLeft 2s;
+}
+
+@media only screen and (max-width: 600px){
+
+  
+nav{ 
+  height: 70px;
+  }
+  
+  .comp1{
+    background-color: black;
+    padding: 25%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+  }
+ 
+  .name-1{
+    font-size: 4.0rem;
+
+    /* height: 20px; */
+    line-height: 20px;
+  }
+
+  .name-2{
+    font-size: 4.0rem;
+    line-height: 20px;
+    margin-top: 60px;
+    margin-left: 45px;
+  }
+  
+  
+}
+
+@font-face {
+  font-family: NEON LED Light;
+  src: url(../assets/NEONLEDLight.ttf);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Timer CSS*/
+
+.timer {
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  background-color: black;
+  margin-left: 14%;
+  
+}
+
+.timer-box {
+  display: flex;
+
+  font-weight: bold;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 117px;
+  text-align: center;
+  animation: effect 2s;
+  color: #ff5a20;
+}
+
+
+
+#mins,
+#days {
+  color: #ffffff;
+}
+
+@keyframes effect {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: rotate(2deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-2deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   .timer{
+     margin-left: 22%;
+   }
+
+  .timer-box{
+    /* position: relative; */
+    font-size: 200%;
+  }
+
+  .temple{
+    display: none;
+  }
+
+   .button-container{
+    position: relative;
+    bottom:20px;
+    right: 200px;
+  
+  } 
+
+  .row{
+    width: 130px;
+  }
+
+  .devfolio{
+    display: none;
+      width: 20px;
+  }
+ 
+
+
+ 
+}
+
+
+/* Button CSS*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+div.button-container {
+  display: flex;
+  margin-left: 150px;
+}
+
+.buttons {
+  display: flex;
+  width: 500px;
+  /* height: 300px; */
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons .row {
+  display: block;
+  margin-left: 60px;
+}
+.buttons .row button {
+  position: relative;
+  display: block;
+  height: 55px;
+  width: 200px;
+  margin: 40px 0;
+  color: rgb(66, 62, 62);
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50px 50px 50px 50px;
+  transition: all 0s ease-out;
+}
+
+.row:hover {
+  transform: scale(1.1);
+}
+.row button:active {
+  top: 3px;
+}
+.row button.devfolio,
+.row button.devfolio span {
+  background: white;
+  border-left: 1px solid #2e4476;
+}
+.row button.devfolio:active {
+  box-shadow: 0px 2px 0px 0px #2e4476;
+}
+.row button.discord,
+.row button.discord span {
+  background: white;
+  border-left: 1px solid #269bd0;
+}
+
+.row button:active span {
+  top: -3px;
+}
+
+i.fab.fa-discord {
+  color: rgb(106, 106, 199);
+  background-color: white;
+}
+
+img.img-fluid {
+  width: 110px;
+  margin-top: 5px;
+}
+div.temple{
+  height:15px;
+  float: right;
+  
+}
+.temple{
+  position: relative;
+  margin-top: 2rem;
+}
+
+img.temple{
+  height: 40rem;
+}
+
+
+/* ABOUT */
+
+.about{
+
+  width: 80%;
+  margin:auto;
+  margin-top: 5%;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.aboutimg{
+  float: left;
+  margin-right: 30px;
+  margin-top: 25px;
+  width: 30%;
+}
+
+.about h1{
+  font-size: 3.5rem;
+}
+.about h3{
+  color: red;
+  font-size: 1.5rem;
+}
+
+.about p{
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px){
+   
+  .about{
+    text-align: center;
+  }
+
+  .about h1{
+    font-size: 2.2rem;
+  }
+  
+  .aboutimg{
+     width: 85%;
+     margin-left: 10%;
+     
+   }
+
+}
+
+/*................................................................................/*
+
+/* tracks CSS */
+
+/* ---------------------------------------------------- */
+.track-container-section{
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+.track-container-section-heading {
+   color: white;
+    display: flex;
+    justify-content: center;
+}
+.track-container-section-heading-track {
+  margin: 5% 0px;
+  font-size: 3rem;
+}
+
+.track-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.flip-card img{
+  width: 304px;
+  height: 304px;
+  opacity: 0.45;
+}
+.flip-card {
+background-color: transparent;
+width: 304px;
+height: 304px;
+ margin: 50px 40px; 
+perspective: 1000px;
+border-radius: 20px;
+
+}
+
+.flip-card h1 {
+  font-size: 3em;
+  margin-top: -190px;
+  opacity: none ;
+  color: white;
+}
+
+.card-back p {
+  color: white;
+}
+.flip-card-inner {
+ position: relative; 
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+ position: absolute; 
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-radius: 20px;
+}
+
+
+.card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+/* -------------------------------------------- */
