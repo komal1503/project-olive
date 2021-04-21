@@ -14,6 +14,16 @@
         "infra",
         "code"
       ]
+    },
+    {
+      "login": "manjeetdhayal",
+      "name": "Manjeet Dhayal ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76167344?v=4",
+      "profile": "https://github.com/manjeetdhayal",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
