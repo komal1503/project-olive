@@ -11,7 +11,7 @@ This means you're free to use the project, as long as you star its GitHub reposi
 Your appreciation makes us grow and glow up. ⭐
 
 ## Live Application URL
-The Application is deployed in 
+The Application is deployed in [Live](https://webwiznitr.github.io/project-olive/)
 
 Click on the link to see the application
 
