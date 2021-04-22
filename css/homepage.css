@@ -18,7 +18,7 @@ nav{
   position: fixed; 
   top: 0; 
   width: 100%;
-  z-index: 1;
+  z-index: 4;
   background: #000000;
   font-family: "Roboto", sans-serif;
 }
@@ -125,6 +125,8 @@ body {
 .home-left {
   width: 1000px;
   margin-left: 4vw;
+  position: relative;
+  z-index: 3;
 }
 
 .name-1 {
@@ -149,6 +151,31 @@ body {
   letter-spacing: 0em;
   color: #ff5a20;
   animation: moveInLeft 2s;
+}
+
+@media only screen and (max-width: 1350px) {
+  .name-1 {
+    font-size: 100px;
+    line-height: 200px;
+  }
+  .name-2 {
+    font-size: 135px;
+    line-height: 100px;
+  }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  .name-1 {
+    font-size: 70px;
+    line-height: 200px;
+  }
+  .name-2 {
+    font-size: 90px;
+    line-height: 0px;
+  }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -221,13 +248,13 @@ nav{
   display: flex;
   font-family: "Roboto Mono", monospace;
   background-color: black;
+  width: fit-content;
   margin-left: 14%;
-  
+  position: relative;
 }
 
 .timer-box {
   display: flex;
-
   font-weight: bold;
   font-style: normal;
   font-size: 4rem;
@@ -235,6 +262,12 @@ nav{
   text-align: center;
   animation: effect 2s;
   color: #ff5a20;
+}
+
+.temple {
+  position: relative;
+  z-index: 0;
+
 }
 
 
@@ -259,6 +292,30 @@ nav{
     opacity: 1;
     transform: rotate(-2deg);
   }
+}
+
+@media only screen and (max-width: 1350px) {
+  #temple {
+    width: 400px;
+    height: auto;
+  }
+  .timer-box {
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  #temple {
+    width: 300px;
+    height: auto;
+  }
+  .timer-box {
+    font-size: 2rem;
+    
+    margin-top: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -414,7 +471,23 @@ img.temple{
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 800px) {
+  div.button-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 600px){
+  div.button-container {
+    min-width: fit-content;
+    margin-left: 200px;
+    justify-content: space-around;
+  }
+
+  .buttons {
+    margin-left: -60px;
+  }
    
   .about{
     text-align: center;
