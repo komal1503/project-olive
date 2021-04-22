@@ -3,7 +3,7 @@
 <img src='https://webwiznitr.xyz/assets/img/logo.png' width='200'>
  </p>
 <h1 align='center'> Hack Odisha  </h1>
-<p align='center'>Hack Odhisha will be organized by Webwiz.We at WebWiz, aspire to meet all your web development needs at your fingertips. We take pride in not just being able to deliver quality work before deadlines but also in going the extra mile for curating your personalized website wherever and whenever there is scope. We make sure that the best design and technical challenges are in tandem so that the website owns an exquisite front while being swift and intelligible simultaneously. </p>
+<p align='center'>Hack Odisha will be organized by Webwiz.We at WebWiz, aspire to meet all your web development needs at your fingertips. We take pride in not just being able to deliver quality work before deadlines but also in going the extra mile for curating your personalized website wherever and whenever there is scope. We make sure that the best design and technical challenges are in tandem so that the website owns an exquisite front while being swift and intelligible simultaneously. </p>
 
 [![Starware](https://img.shields.io/badge/⭐-Starware-f5a91a?labelColor=black)](https://github.com/zepfietje/starware)
 
