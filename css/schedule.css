@@ -1,0 +1,116 @@
+
+
+.schedule-heading{
+    font-size: 4rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.schedule-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0% 5%;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.schedule-left{
+    /* width: 40%; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-left-day{
+    
+    /* margin-right:10% ; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.schedule-left-day-button{
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    width: 125px;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    outline: none;
+
+}
+.schedule-left-day-button:hover{
+   transform: scaleX(1.1); 
+    cursor:pointer;
+    color: black;
+    background-color: #FF7846;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+
+
+.schedule-left-image img{
+    width: 50%;
+}
+.schedule-date{
+    display: flex;
+    flex-direction: column;
+
+}
+.schedule-date2{
+    font-size:xx-large ;
+}
+.schedule-right-box{
+    background-color:  #FF7846;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 25px;
+    font-size: 1.5rem;
+  
+}
+
+
+.schedule-right-middle-box{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1300px)
+{
+    .schedule-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .schedule-right{
+        margin-top: 100px;
+    }
+    .schedule-left{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 650px){
+    .schedule-right-middle-box{
+        
+        flex-direction:column;
+    }
+    .schedule-left-day{
+        flex-direction: row;
+    }
+    .schedule-left-day-button{
+        width: 100px;
+        margin: 10px;
+    }
+}

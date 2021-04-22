@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/sponsors.css">
     <link rel="stylesheet" href="./css/prize.css">
+    <link rel="stylesheet" href="./css/schedule.css">
 
     <!-- fontawesome -->
     <link
@@ -22,7 +23,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body oncontextmenu="return false;">
+   
     <!-- NAVBAR -->
     <nav>
       <input type="checkbox" id="check" />
@@ -369,7 +371,59 @@
     </section>
 
     <!--  ---------------------------    -->
+
+    <!--  schedule section  -->
+ <section class="schedule">
+        <div class="schedule-heading"><h >The Schedule</h></div>
+        
+        <div class="schedule-container">
+            <div class="schedule-left">
+                <div class="schedule-left-day">
+                    <button  id="schedule-button1" class="schedule-left-day-button" onclick="change_text_day1()">Day 1</button>
+                    <button id="schedule-button2" 
+                        class="schedule-left-day-button" onclick="change_text_day2()">Day 2</button>
+                        <button  id="schedule-button3" class="schedule-left-day-button" onclick="change_text_day3()">Day 3</button>
+                </div>
+                <div class="schedule-left-image">
+                    <img src="./assets/Rectangle 43.png">
+
+                </div>
+            </div>
+            <div class="schedule-right">
+
+                <div class="schedule-date">
+                    <snap class="schedule-date1" id="schedule-date1-day">Day 1 full schedule </snap>
+                    <snap class="schedule-date2" id="schedule-date2-date"> April X</snap>
+                </div>
+                <div class="schedule-right-box">
+
+                    <snap id="schedule-right-top-box-time">10:00AM</snap>
+                    <snap id="schedule-right-top-box-event">Mentor Discussion</snap>
+
+                </div>
+                <div class="schedule-right-middle-box">
+                    <div class="schedule-right-box"> <snap id="schedule-right-middle-box1-time">10:00AM</snap>
+                        <snap id="schedule-right-middle-box1-event" >Mentor Discussion</snap>
+                    </div>
+
+                    <div class="schedule-right-box"> <snap id="schedule-right-middle-box2-time">10:00AM</snap>
+                        <snap id="schedule-right-middle-box2-event">Mentor Discussion</snap>
+
+                    </div>
+                </div>
+
+                <div class="schedule-right-box">
+
+                    <snap id="schedule-right-bottom-box-time">10:00AM</snap>
+                    <snap id="schedule-right-bottom-box-event">Mentor Discussion</snap>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *********************************** -->
     </main>
     <script src="./Js/timer.js"></script>
+    <script src="./Js/schedule.js"></script>
   </body>
 </html>
