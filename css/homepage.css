@@ -247,7 +247,7 @@ nav{
 .timer {
   display: flex;
   font-family: "Roboto Mono", monospace;
-  background-color: black;
+  background-color: transparent;
   width: fit-content;
   margin-left: 14%;
   position: relative;
@@ -262,6 +262,8 @@ nav{
   text-align: center;
   animation: effect 2s;
   color: #ff5a20;
+  width: auto;
+  padding: 0.25rem
 }
 
 .temple {
@@ -302,42 +304,57 @@ nav{
   .timer-box {
     font-size: 3rem;
   }
+  .timer{
+    margin-left: 10%;
+  }
 
+}
+
+@media only screen and (max-width: 950px) {
+  .timer-box {
+    margin-left: -5%;
+    padding: .5rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   #temple {
     width: 300px;
     height: auto;
+    margin-top: 5rem;
   }
   .timer-box {
     font-size: 2rem;
-    
     margin-top: 2rem;
+  }
+  .timer{
+    margin-left: 10%;
   }
 
 }
 
+@media only screen and (max-width: 650px) {
+  #temple {
+    width: 250px;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
    .timer{
-     margin-left: 22%;
+     margin-left: 15%;
    }
 
   .timer-box{
     /* position: relative; */
     font-size: 200%;
   }
-
-  .temple{
-    display: none;
+  #temple {
+    width: 200px;
+    height: auto;
   }
 
-   .button-container{
-    position: relative;
-    bottom:20px;
-    right: 200px;
   
-  } 
 
   .row{
     width: 130px;
@@ -361,6 +378,7 @@ nav{
 div.button-container {
   display: flex;
   margin-left: 150px;
+  width: fit-content;
 }
 
 .buttons {
@@ -372,7 +390,7 @@ div.button-container {
 }
 .buttons .row {
   display: block;
-  margin-left: 60px;
+  margin-left: 0px;
 }
 .buttons .row button {
   position: relative;
@@ -431,7 +449,7 @@ div.temple{
 }
 .temple{
   position: relative;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 img.temple{
@@ -471,18 +489,43 @@ img.temple{
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1350px)  {
+   div.button-container {
+     margin-left: 5%;
+   }
+}
+
+@media only screen and (max-width: 950px)  {
   div.button-container {
-    margin-left: 0;
-    justify-content: center;
+    margin-left: 5%;
+    width: 350px;
+  }
+  .buttons .row button {
+    height: 45px;
+    width: 140px;
+    font-size: 15px;
+  }
+
+  img.img-fluid {
+    width: 75px;
+    margin-top: 5px;
   }
 }
 
+
+@media only screen and (max-width: 800px) {
+  div.button-container {
+    justify-content: center;
+    width: 300px;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px){
   div.button-container {
-    min-width: fit-content;
-    margin-left: 200px;
-    justify-content: space-around;
+    width: 250px;
+    margin-left: 20%;
   }
 
   .buttons {
