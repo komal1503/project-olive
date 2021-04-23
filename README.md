@@ -46,6 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://padmajabhol.github.io/portfoliox/"><img src="https://avatars.githubusercontent.com/u/75530516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Padmaja Bhol</b></sub></a><br /><a href="#projectManagement-padmajabhol" title="Project Management">📆</a> <a href="https://github.com/Webwiznitr/project-olive/commits?author=padmajabhol" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/komal1503"><img src="https://avatars.githubusercontent.com/u/76110970?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Komal</b></sub></a><br /><a href="https://github.com/Webwiznitr/project-olive/commits?author=komal1503" title="Code">💻</a></td>
     <td align="center"><a href="http://ScottJellen.com"><img src="https://avatars.githubusercontent.com/u/51421669?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Scott Jellen</b></sub></a><br /><a href="https://github.com/Webwiznitr/project-olive/issues?q=author%3ASJellen" title="Bug reports">🐛</a> <a href="https://github.com/Webwiznitr/project-olive/commits?author=SJellen" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rhiadc"><img src="https://avatars.githubusercontent.com/u/28659899?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rhiad Ciccoli</b></sub></a><br /><a href="https://github.com/Webwiznitr/project-olive/commits?author=Rhiadc" title="Code">💻</a></td>
   </tr>
 </table>
 
