@@ -32,10 +32,18 @@
         <i class="fas fa-bars" id="btn"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
+      <div id = 'vol' class="slidecontainer" >
+        <input onchange="setVolume()" type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='0.30' class="slider" style="display:none">
+      </div>
       <a class="navbar-icon" href=""
         ><i class="fab fa-pagelines fa-3x secdiv"></i
       ></a>
       <ul>
+        <li id="player" ><a  id="play" onclick="setAudio()" style="cursor:pointer">
+          <i  class="fas fa-play"></i> </a>
+          <a  id="pause" onclick="pauseAudio()" style="display:none">
+            <i class="fas fa-pause"></i> </a>
+        </li>
         <li><a class="active" href="#">HOME</a></li>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="#">TEAMS</a></li>
@@ -354,5 +362,6 @@
     </main>
     <script src="./Js/timer.js"></script>
     <script src="./Js/schedule.js"></script>
+    <script src="./Js/player.js"></script>
   </body>
 </html>
