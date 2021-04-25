@@ -572,7 +572,7 @@ img.temple{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
  
 }
 
@@ -627,9 +627,16 @@ border-radius: 20px;
 
 
 .card-back {
-  background-color: black;
+  background-color: #272525e8;
+  justify-content: center;
   color: white;
+ /*  padding: 10%; */
   transform: rotateY(180deg);
+  
+}
+.card-back p{
+   padding: 10%; 
+   text-align: center;
   
 }
 
