@@ -63,6 +63,11 @@
         margin: 10px 40px;
         }
 
+        #postman{
+          max-width: 100%;
+          max-height: 100px;
+        }
+
         .sptext{
           margin: 0px 8%;
           font-size: 3rem;
